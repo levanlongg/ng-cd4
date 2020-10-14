@@ -9,6 +9,11 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { Er404Component } from './shared/er404/er404.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { ServiceComponent } from './service/service.component';
+import { RoyalCustomerComponent } from './royal-customer/royal-customer.component';
+import { RulesComponent } from './rules/rules.component';
+import { AcculativePointsComponent } from './acculative-points/acculative-points.component';
+import { AppRoutingModule } from './app-routing.module';
 
 const routes: Routes = [
   {
@@ -34,12 +39,17 @@ const routes: Routes = [
     MenuComponent,
     FooterComponent,
     Er404Component,
+    ServiceComponent,
+    RoyalCustomerComponent,
+    RulesComponent,
+    AcculativePointsComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(routes, { useHash: true })  // .../#/crisis-center/
+    RouterModule.forRoot(routes, { useHash: true }),
+    AppRoutingModule  // .../#/crisis-center/
   ],
   providers: [],
   bootstrap: [AppComponent]

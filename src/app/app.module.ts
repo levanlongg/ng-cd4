@@ -2,21 +2,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './shared/menu/menu.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { Er404Component } from './shared/er404/er404.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
-import { RoyalCustomerComponent } from './royal-customer/royal-customer.component';
-import { RulesComponent } from './rules/rules.component';
 import { AcculativePointsComponent } from './acculative-points/acculative-points.component';
 import { HomeModule} from './home/home.module';
 import { SharedModule} from './shared/shared.module';
 import { ServiceModule} from './service/service.module';
 import { IntroduceModule } from './introduce/introduce.module';
 import { ContactModule } from './contact/contact.module';
-
+import { RoyalCustomerModule } from './royal-customer/royal-customer.module';
+import { LoginModule } from './login/login.module';
+import { RegistrationModule } from './registration/registration.module';
+import { SwitchboardModule } from './switchboard/switchboard.module';
+import { RegisCusTutorialModule } from './regis-cus-tutorial/regis-cus-tutorial.module';
+import { UpdatePwCusModule } from './update-pw-cus/update-pw-cus.module';
+import { ProfileModule } from './profile/profile.module';
 
 
 const routes: Routes = [
@@ -37,6 +40,38 @@ const routes: Routes = [
     loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)  
   },
   {
+    path: 'royal-customer',
+    loadChildren: () => import('./royal-customer/royal-customer.module').then(m => m.RoyalCustomerModule)  
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)  
+  },
+  {
+    path: 'registration',
+    loadChildren: () => import('./registration/registration.module').then(m => m.RegistrationModule)  
+  },
+  {
+    path: 'acculative-points',
+    loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)  
+  },
+  {
+    path: 'regis-cus-tutorial',
+    loadChildren: () => import('./regis-cus-tutorial/regis-cus-tutorial.module').then(m => m.RegisCusTutorialModule)  
+  },
+  {
+    path: 'update-pw-cus',
+    loadChildren: () => import('./update-pw-cus/update-pw-cus.module').then(m => m.UpdatePwCusModule)  
+  },
+  {
+    path: 'switchboard',
+    loadChildren: () => import('./switchboard/switchboard.module').then(m => m.SwitchboardModule)  
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule)  
+  },
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full',
@@ -46,12 +81,9 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
     MenuComponent,
     FooterComponent,
     Er404Component,
-    RoyalCustomerComponent,
-    RulesComponent,
     AcculativePointsComponent,
   ],
   imports: [
@@ -62,7 +94,13 @@ const routes: Routes = [
     ServiceModule,
     IntroduceModule,
     ContactModule,
+    LoginModule,
+    SwitchboardModule,
+    RegistrationModule,
+    RoyalCustomerModule,
     ReactiveFormsModule,
+    RegisCusTutorialModule,
+    UpdatePwCusModule,
     RouterModule.forRoot(routes),
   ],
   providers: [],

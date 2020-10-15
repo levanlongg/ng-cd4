@@ -1,0 +1,62 @@
+<div class="body1">
+	<h1 class="w3layouts" style="margin-left: 12%;">Cập nhật hồ sơ</h1>
+	<div class="clear"></div>
+	<div class="content-w3ls">
+		<div class="form_w3layouts">
+			<form action="#" method="post" class="agile_form">
+				<div class="agileits-left">
+					<input type="text" name="name" class="username" placeholder="Họ tên" required="">
+				</div>
+				<div class="checkin agileits-left">
+					<input placeholder="Ngày sinh" class="date" name="date" id="datepicker" type="text" value=""
+						onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="" />
+				</div>
+				<div class="agileits-left">
+					<input type="email" name="email" class="username" placeholder="Email" required="">
+				</div>
+				<div class="agileits-left s2-w3ls">
+					<input type="text" name="number" class="username" placeholder="Số điện thoại" required="">
+				</div>
+				<div class="agileits-left">
+					<input type="text" name="acount" class="username" placeholder="Tên tài khoản" required="">
+				</div>
+				<div class="agileits-left">
+					<input type="password" name="email" class="username" placeholder="Mật khẩu" required="">
+				</div>
+				<div class="agileits-left">
+					<input type="password" name="email" class="username" placeholder="Nhập lại mật khẩu" required="">
+				</div>
+				<div class="submit-w3l">
+					<input type="submit" value="Submit">
+				</div>
+			</form>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+	<h2 class="copyright-agileits">
+	</h2>
+	<div class="clear"></div>
+
+	<!-- js -->
+	<script src="./assets/registration/js/jquery-2.2.3.min.js"></script>
+	<!-- //js -->
+	<!-- date-->
+	<!-- <link rel="stylesheet" href="css/jquery-ui.css" /> -->
+	<script src="./assets/registration/js/jquery-ui.js"></script>
+	<script>
+		$(function () {
+			$("#datepicker,#datepicker1").datepicker();
+		});
+	</script>
+	<!-- //date -->
+	<!-- time -->
+	<script type="text/javascript" src="./assets/registration/js/wickedpicker.js"></script>
+	<script type="text/javascript">
+		$('.timepicker').wickedpicker({
+			twentyFour: false
+		});
+	</script>
+	<!-- <link href="css/wickedpicker.css" rel="stylesheet" type='text/css' media="all" /> -->
+	<!-- //time -->
+</div>

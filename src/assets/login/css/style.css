@@ -120,7 +120,7 @@ Author URL: http://w3layouts.com
       font-weight: normal;
       font-size: 15px;
       text-align: center;
-      color: #fff;
+      color:red !important;
       background: var(--theme-color);
       padding: 14px 18px;
       border-radius: 4px;
@@ -129,7 +129,7 @@ Author URL: http://w3layouts.com
   }
 
   .theme-button:hover {
-      background: #ffffff;
+      background:lightgreen;
       color: #000000;
   }
 
@@ -160,7 +160,7 @@ Author URL: http://w3layouts.com
   .form-input span.fa {
       color: var(--title-color);
       font-size: 14px;
-      border-right: 1px solid #eee;
+      border-right: 1px solid ;
       margin-right: 5px;
   }
 
@@ -199,7 +199,7 @@ Author URL: http://w3layouts.com
   .checkbox {
       width: 16px;
       height: 16px;
-      color: #F5F9FC;
+      color: blue;
       background: #304659;
       float: left;
   }
@@ -220,8 +220,8 @@ Author URL: http://w3layouts.com
 
   .social-icons {
       align-items: center;
-      border-top: 1px solid #eee;
-      border-bottom: 1px solid #eee;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
       padding: 30px 0px 20px;
       margin-top: 40px;
       position: relative;
@@ -240,7 +240,7 @@ Author URL: http://w3layouts.com
       font-style: normal;
       font-weight: bold;
       font-size: 13px;
-      background: #f7f7f7;
+      background: black;
       color: var(--title-color);
       text-align: center;
       display: inline-block;
@@ -272,7 +272,7 @@ Author URL: http://w3layouts.com
   .google span {
       display: block;
       line-height: 35px;
-      color: #fff;
+      color: black;
       font-size: 14px;
   }
 
@@ -339,12 +339,12 @@ Author URL: http://w3layouts.com
       left: 0;
       height: 17px;
       width: 17px;
-      background-color: #E1E9F0;
+      background-color: blue;
   }
 
   /* On mouse-over, add a grey background color */
   .check-remaind:hover input~.checkmark {
-      background-color: #E1E9F0;
+      background-color: blue;
   }
 
   /* When the checkbox is checked, add a blue background */
@@ -370,7 +370,7 @@ Author URL: http://w3layouts.com
       top: 2px;
       width: 4px;
       height: 9px;
-      border: solid white;
+      border: solid blue;
       border-width: 0 2px 2px 0;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -382,13 +382,13 @@ Author URL: http://w3layouts.com
   }
 
   .copy-right p {
-      color: #fff;
+      color: black;
       font-size: 14px;
       line-height: 22px;
   }
 
   .copy-right p a {
-      color: #fff;
+      color:black;
       font-size: 16px;
       text-decoration: underline;
   }

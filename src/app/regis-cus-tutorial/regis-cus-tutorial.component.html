@@ -5,11 +5,11 @@
             <div class="card bg-light mb-3">
                 <div class="card-header bg-warning text-white text-uppercase"><i class="fa fa-list"></i> Danh mục</div>
                 <ul class="list-group category_block">
-                    <li class="list-group-item"><a href="category.html">Tin tức</a></li>
-                    <li class="list-group-item"><a href="category.html">Hồ sơ KHTT</a></li>
-                    <li class="list-group-item"><a href="category.html">Hướng dẫn đăng ký KHTT</a></li>
-                    <li class="list-group-item"><a href="category.html">Điểm tích lũy</a></li>
-                    <li class="list-group-item"><a href="category.html">Tuyển dụng</a></li>
+                    <li class="list-group-item"><a [routerLink]="['/news']" routerLinkActive="router-link-active">Tin tức</a></li>
+                    <li class="list-group-item"><a [routerLink]="['/profile']" routerLinkActive="router-link-active">Hồ sơ KHTT</a></li>
+                    <li class="list-group-item"><a [routerLink]="['/regis-cus-tutorial']" routerLinkActive="router-link-active">Hướng dẫn đăng ký KHTT</a></li>
+                    <li class="list-group-item"><a [routerLink]="['/acculative-points']" routerLinkActive="router-link-active">Điểm tích lũy</a></li>
+                    <li class="list-group-item"><a [routerLink]="['/recruitment']" routerLinkActive="router-link-active">Tuyển dụng</a></li>
                 </ul>
             </div>
         </div>

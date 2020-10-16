@@ -1,3 +1,10 @@
+<style>
+  .a1{
+    text-decoration: none;
+    font-size: 120%;
+    font-weight: bold;
+  };
+</style>
 <br />
 <div class="container">
   <div id="demo" class="carousel slide" data-ride="carousel">
@@ -19,7 +26,7 @@
       <div class="carousel-item">
         <div style="text-align: center;">
           <img src="./assets/home/image/banner-dai-hoi-dang.jpg" alt="dai-hoi-dang">
-        </div>      
+        </div>
       </div>
       <div class="carousel-item">
         <div style="text-align: center;">
@@ -35,7 +42,7 @@
       <span class="carousel-control-next-icon"></span>
     </a>
   </div>
-  <br/>
+  <br />
   <div class="row">
     <div class="col">
       <nav class="navbar navbar-expand-sm bg-secondary justify-content-right">
@@ -46,10 +53,10 @@
                 Trang chủ
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#"></a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
-                <a class="dropdown-item" href="#">Link 3</a>
+                <a class="dropdown-item" [routerLink]="['/introduce']" routerLinkActive="router-link-active">Giới
+                  thiệu</a>
+                <a class="dropdown-item" [routerLink]="['/recruitment']" routerLinkActive="router-link-active">Tuyển
+                  dụng</a>
               </div>
             </div>
           </li>
@@ -59,9 +66,8 @@
                 Khuyến mãi
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
+                <a class="dropdown-item" [routerLink]="['/promotionx']" routerLinkActive="router-link-active">Khuyến
+                  mãi</a>
               </div>
             </div>
           </li>
@@ -71,9 +77,16 @@
                 Khách hàng thân thiết
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
+                <a class="dropdown-item" [routerLink]="['/royal-customer']" routerLinkActive="router-link-active">Thể
+                  lệ</a>
+                <a class="dropdown-item" [routerLink]="['/regis-cus-tutorial']"
+                  routerLinkActive="router-link-active">Hướng đãn đăng ký KHTT online</a>
+                <a class="dropdown-item" [routerLink]="['/update-pw-cus']" routerLinkActive="router-link-active">Hướng
+                  dẫn cập nhật hồ sơ KHTT</a>
+                <a class="dropdown-item" [routerLink]="['/profile']" routerLinkActive="router-link-active">Cập nhật hồ
+                  sơ KHTT</a>
+                <a class="dropdown-item" [routerLink]="['/acculative-points']"
+                  routerLinkActive="router-link-active">Thông tin điểm tích lũy</a>
               </div>
             </div>
           </li>
@@ -83,9 +96,10 @@
                 Dịch vụ
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
+                <a class="dropdown-item" [routerLink]="['/']" routerLinkActive="router-link-active">Phiếu mua hàng</a>
+                <a class="dropdown-item" [routerLink]="['/']" routerLinkActive="router-link-active">Thẻ tích điểm</a>
+                <a class="dropdown-item" [routerLink]="['/switchboard']" routerLinkActive="router-link-active">Tổng đài
+                  CSKH</a>
               </div>
             </div>
           </li>
@@ -95,9 +109,8 @@
                 Liên hệ
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Link 1</a>
-                <a class="dropdown-item" href="#">Link 2</a>
-                <a class="dropdown-item" href="#">Link 3</a>
+                <a class="dropdown-item" [routerLink]="['/contact']" routerLinkActive="router-link-active">Thông tin
+                  liên hệ</a>
               </div>
             </div>
           </li>
@@ -105,7 +118,6 @@
       </nav>
     </div>
   </div>
-
   <br />
   <div class="container">
     <div class="row">
@@ -113,82 +125,85 @@
         <div class="card bg-light mb-3">
           <div class="card-header bg-warning text-white text-uppercase"><i class="fa fa-list"></i> Danh mục</div>
           <ul class="list-group category_block">
-            <li class="list-group-item"><a href="category.html">Tin tức</a></li>
-            <li class="list-group-item"><a href="category.html">Hồ sơ KHTT</a></li>
-            <li class="list-group-item"><a href="category.html">Hướng dẫn đăng ký KHTT</a></li>
-            <li class="list-group-item"><a href="category.html">Điểm tích lũy</a></li>
-            <li class="list-group-item"><a href="category.html">Tuyển dụng</a></li>
+            <li class="list-group-item"><a [routerLink]="['/news']" routerLinkActive="router-link-active">Tin tức</a>
+            </li>
+            <li class="list-group-item"><a [routerLink]="['/profile']" routerLinkActive="router-link-active">Hồ sơ
+                KHTT</a></li>
+            <li class="list-group-item"><a [routerLink]="['/regis-cus-tutorial']"
+                routerLinkActive="router-link-active">Hướng dẫn đăng ký KHTT</a></li>
+            <li class="list-group-item"><a [routerLink]="['/login']" routerLinkActive="router-link-active">Điểm tích
+                lũy</a></li>
+            <li class="list-group-item"><a [routerLink]="['/recruitment']" routerLinkActive="router-link-active">Tuyển
+                dụng</a></li>
           </ul>
         </div>
       </div>
       <div class="col">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-              </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="./assets/home/image/duong-gom-su-ha-noi.jpg" alt="duong-gom-su">
+            </div>
+            <div class="col-sm-9">
+              <h4><a class="a1" href="#">Đường tranh gốm sứ kỷ lục thế giới ở Hà Nội có thể được nối dài</a></h4>
+              <p>Con đường gốm sứ ở Hà Nội sau gần 10 năm nhận kỷ lục Guinness có thể được nối dài về phía cầu Nhật Tân, kết nối liền mạch qua bức tường bê tông An Dương - Nghi Tàm mới hạ cốt.</p>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-              </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="./assets/home/image/tranh-gom-chan-dung-lanh-dao-apec.jpg" alt="tranh-gom-chan-dung-lanh-dao-apec">
+            </div>
+            <div class="col-sm-9">
+              <h4><a href="" class="a1">Thủ tướng tặng tranh gốm ghép chân dung cho lãnh đạo 21 nền kinh tế APEC</a></h4>
+              <p> Bộ tranh được chế tác dựa trên ảnh chân dung của các nhà lãnh đạo, với biểu cảm tự nhiên đặc trưng của từng nhân vật, bằng những mảnh gốm sứ nhiều màu. Đó là quà tặng của Thủ tướng Nguyễn Xuân Phúc gửi tới lãnh đạo các nền kinh tế APEC.</p>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-              </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="./assets/home/image/tranh-gom-nghe-thuat-bien-da-nang.jpg" alt="tranh-gom-nghe-thuat-bien-da-nang">
+            </div>
+            <div class="col-sm-9">
+              <h4><a href="" class="a1">Bờ kè biển Đà Nẵng sinh động với tranh gốm nghệ thuật</a></h4>
+              <p>Hơn 1.300 mét bờ kè biển Đà Nẵng được trang trí sinh động bằng những bức tranh gốm nghệ thuật mang đậm dấu ấn đặc sắc, gần gũi với đời sống văn hóa - xã hội thành phố biển. </p>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-              </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="./assets/home/image/do-gom-co.jpg" alt="do-gom-co">
+            </div>
+            <div class="col-sm-9">
+              <h4><a href="" class="a1" >Chiêm ngưỡng bộ sưu tập đồ cổ có niên đại hàng trăm năm tại Hà Tĩnh</a></h4>
+              <p>Sau gần 10 năm sưu tập, hiện anh Nguyễn Tuấn trú tại phường Thạch Linh, TP.Hà Tĩnh đã sở hữu rất nhiều món đồ cổ có giá trị.</p>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-              </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="./assets/home/image/gom-xuat-khau.jpg" alt="gom-xuat-khau">
+            </div>
+            <div class="col-sm-9">
+              <h4><a href="" class="a1">Tiêu chuẩn gốm sứ Việt Nam xuất khẩu châu Âu</a></h4>
+              <p>Vào các tháng cuối năm 2019, thị trường gốm sứ tại Việt Nam đang trở lại sôi động hơn bao giờ hết.</p>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-6">
-            <div class="card">
-              <img class="card-img-top" src="https://dummyimage.com/600x400/55595c/fff" alt="Card image cap">
-              <div class="card-body">
-                <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-              </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="./assets/home/image/qua-tang-gom.jpg" alt="qua-tang-gom">
+            </div>
+            <div class="col-sm-9">
+              <h4><a href="" class="a1">Gợi ý quà tặng độc đáo dịp tết 2019</a></h4>
+              <p>Chỉ còn hơn tháng nữa là tới dịp Tết cuối năm, một ngày lễ lớn nhất trong năm của người Việt. Là những doanh nghiệp có quy mô và bộ máy tổ chức tốt thì việc tặng quà khách hàng dịp cuối năm rất được chú trọng, nhằm gửi lời tri ân đến khách hàng trong suốt thời gian làm việc và hợp tác...</p>
             </div>
           </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="./assets/home/image/gom-bat-trang.png" alt="gom-bat-trang">
+            </div>
+            <div class="col-sm-9">
+              <h4><a href="" class="a1">Câu chuyện về Gốm 10</a></h4>
+              <p>“Xuất thân trong một gia đình có truyền thống lâu đời làm nghề gốm sứ, ngay từ nhỏ Tôi đã có một tình yêu rất đặc biệt với những sản phẩm gốm sứ thủ công của làng Bát Tràng quê mình, Tôi luôn mong muốn mang thương hiệu gốm sứ Bát Tràng nói chung và mang GỐM 10 nói riêng đến được với mọi người trong nước và cả quốc tế...”</p>
+            </div>
+          </div>
+
           <div class="col-12">
             <nav aria-label="...">
               <ul class="pagination">
@@ -211,5 +226,5 @@
     </div>
   </div>
 </div>
-<br/>
-<br/>
+<br />
+<br />

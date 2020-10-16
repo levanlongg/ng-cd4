@@ -7,19 +7,19 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
             <ul class="navbar-nav m-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Trang chủ</a>
+                    <a class="nav-link" [routerLink]="['/home']" routerLinkActive="router-link-active">Trang chủ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="category.html">Khuyến mãi<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" [routerLink]="['/promotion']" routerLinkActive="router-link-active">Khuyến mãi<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="product.html">Tin tức</a>
+                    <a class="nav-link" [routerLink]="['/news']" routerLinkActive="router-link-active">Tin tức</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="cart.html">Dịch vụ</a>
+                    <a class="nav-link" [routerLink]="['/service']" routerLinkActive="router-link-active">Dịch vụ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Liên hệ</a>
+                    <a class="nav-link" [routerLink]="['/contact']" routerLinkActive="router-link-active">Liên hệ</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -31,7 +31,7 @@
                         </button>
                     </div>
                 </div>
-                <a href="#" style="margin-left: 10px;"> Đăng ký | </a><a style="margin-left: 5px;" href="#">Đăng nhập</a>
+                <a [routerLink]="['/registration']" routerLinkActive="router-link-active" style="margin-left: 10px;"> Đăng ký | </a><a style="margin-left: 5px;" [routerLink]="['/login']" routerLinkActive="router-link-active">Đăng nhập</a>
             </form>
         </div>
     </div>

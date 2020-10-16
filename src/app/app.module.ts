@@ -7,7 +7,6 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { Er404Component } from './shared/er404/er404.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
-import { AcculativePointsComponent } from './acculative-points/acculative-points.component';
 import { HomeModule} from './home/home.module';
 import { SharedModule} from './shared/shared.module';
 import { ServiceModule} from './service/service.module';
@@ -20,7 +19,11 @@ import { SwitchboardModule } from './switchboard/switchboard.module';
 import { RegisCusTutorialModule } from './regis-cus-tutorial/regis-cus-tutorial.module';
 import { UpdatePwCusModule } from './update-pw-cus/update-pw-cus.module';
 import { ProfileModule } from './profile/profile.module';
-
+import { AcculativePointsModule } from './acculative-points/acculative-points.module';
+import { CouponModule } from './coupon/coupon.module';
+import { PromotionModule } from './promotion/promotion.module';
+import { LoyaltyCardsModule } from './loyalty-cards/loyalty-cards.module';
+import { NewsModule } from './news/news.module';
 
 const routes: Routes = [
   {
@@ -53,7 +56,7 @@ const routes: Routes = [
   },
   {
     path: 'acculative-points',
-    loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)  
+    loadChildren: () => import('./acculative-points/acculative-points.module').then(m => m.AcculativePointsModule)  
   },
   {
     path: 'regis-cus-tutorial',
@@ -72,6 +75,22 @@ const routes: Routes = [
     loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule)  
   },
   {
+    path: 'coupon',
+    loadChildren: () => import('./coupon/coupon.module').then(m => m.CouponModule)  
+  },
+  {
+    path: 'news',
+    loadChildren: () => import('./news/news.module').then(m => m.NewsModule)  
+  },
+  {
+    path: 'loyalty-cards',
+    loadChildren: () => import('./loyalty-cards/loyalty-cards.module').then(m => m.LoyaltyCardsModule)  
+  },
+  {
+    path: 'promotion',
+    loadChildren: () => import('./promotion/promotion.module').then(m => m.PromotionModule)  
+  },
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full',
@@ -84,7 +103,6 @@ const routes: Routes = [
     MenuComponent,
     FooterComponent,
     Er404Component,
-    AcculativePointsComponent,
   ],
   imports: [
     BrowserModule,
@@ -95,12 +113,18 @@ const routes: Routes = [
     IntroduceModule,
     ContactModule,
     LoginModule,
+    ProfileModule,
     SwitchboardModule,
     RegistrationModule,
     RoyalCustomerModule,
     ReactiveFormsModule,
     RegisCusTutorialModule,
     UpdatePwCusModule,
+    AcculativePointsModule,
+    CouponModule,
+    NewsModule,
+    PromotionModule,
+    LoyaltyCardsModule,
     RouterModule.forRoot(routes),
   ],
   providers: [],

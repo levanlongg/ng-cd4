@@ -1,22 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoyaltyCardsComponent } from './loyalty-cards.component'
+import { RecruitmentComponent } from './recruitment.component'
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule, Routes } from '@angular/router';
+
 
 
 const routes: Routes = [
   {
     path: '',
-    component: LoyaltyCardsComponent,
+    component: RecruitmentComponent,
   }, 
 ];
 
 @NgModule({
-  declarations: [LoyaltyCardsComponent],
+  declarations: [RecruitmentComponent],
   imports: [
     SharedModule,
     RouterModule.forChild(routes),
   ]
 })
-export class LoyaltyCardsModule { }
+export class RecruitmentModule { }

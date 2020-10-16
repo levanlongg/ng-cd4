@@ -1,0 +1,43 @@
+<style>
+    .a1{
+      text-decoration: none;
+      font-size: 120%;
+      font-weight: bold;
+    };
+  </style>
+  <br />
+  <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          <div class="card bg-light mb-3">
+            <div class="card-header bg-warning text-white text-uppercase"><i class="fa fa-list"></i> Danh mục</div>
+            <ul class="list-group category_block">
+              <li class="list-group-item"><a [routerLink]="['/news']" routerLinkActive="router-link-active">Tin tức</a>
+              </li>
+              <li class="list-group-item"><a [routerLink]="['/profile']" routerLinkActive="router-link-active">Hồ sơ
+                  KHTT</a></li>
+              <li class="list-group-item"><a [routerLink]="['/regis-cus-tutorial']"
+                  routerLinkActive="router-link-active">Hướng dẫn đăng ký KHTT</a></li>
+              <li class="list-group-item"><a [routerLink]="['/login']" routerLinkActive="router-link-active">Điểm tích
+                  lũy</a></li>
+              <li class="list-group-item"><a [routerLink]="['/recruitment']" routerLinkActive="router-link-active">Tuyển
+                  dụng</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+              <div class="col-sm-2"></div>
+              <div class="col-sm-10">
+              <h4 style="color: blue; font-size: 120%; font-weight: bold;">Thông tin tuyển dụng:</h4>
+              <p><a href="">- Thông tin tuyển dụng 2020</a></p>
+              <p><a href="">- Thông tin tuyển dụng 2019</a></p>
+              <p><a href="">- Thông tin tuyển dụng 2018</a></p>
+              <p><a href="">- Thông tin tuyển dụng 2017</a></p>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <br />
+  <br />

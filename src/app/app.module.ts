@@ -22,8 +22,8 @@ import { ProfileModule } from './profile/profile.module';
 import { AcculativePointsModule } from './acculative-points/acculative-points.module';
 import { CouponModule } from './coupon/coupon.module';
 import { PromotionModule } from './promotion/promotion.module';
-import { LoyaltyCardsModule } from './loyalty-cards/loyalty-cards.module';
 import { NewsModule } from './news/news.module';
+import { RecruitmentModule } from './recruitment/recruitment.module';
 
 const routes: Routes = [
   {
@@ -83,12 +83,12 @@ const routes: Routes = [
     loadChildren: () => import('./news/news.module').then(m => m.NewsModule)  
   },
   {
-    path: 'loyalty-cards',
-    loadChildren: () => import('./loyalty-cards/loyalty-cards.module').then(m => m.LoyaltyCardsModule)  
-  },
-  {
     path: 'promotion',
     loadChildren: () => import('./promotion/promotion.module').then(m => m.PromotionModule)  
+  },
+  {
+    path: 'recruitment',
+    loadChildren: () => import('./recruitment/recruitment.module').then(m => m.RecruitmentModule)  
   },
   {
     path: '',
@@ -123,8 +123,8 @@ const routes: Routes = [
     AcculativePointsModule,
     CouponModule,
     NewsModule,
+    RecruitmentModule,
     PromotionModule,
-    LoyaltyCardsModule,
     RouterModule.forRoot(routes),
   ],
   providers: [],

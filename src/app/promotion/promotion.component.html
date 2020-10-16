@@ -1,1 +1,102 @@
-<p>promotion works!</p>
+<style>
+    .a1{
+      text-decoration: none;
+      font-size: 120%;
+      font-weight: bold;
+    };
+  </style>
+  <br />
+  <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-3">
+          <div class="card bg-light mb-3">
+            <div class="card-header bg-warning text-white text-uppercase"><i class="fa fa-list"></i> Danh mục</div>
+            <ul class="list-group category_block">
+              <li class="list-group-item"><a [routerLink]="['/news']" routerLinkActive="router-link-active">Tin tức</a>
+              </li>
+              <li class="list-group-item"><a [routerLink]="['/profile']" routerLinkActive="router-link-active">Hồ sơ
+                  KHTT</a></li>
+              <li class="list-group-item"><a [routerLink]="['/regis-cus-tutorial']"
+                  routerLinkActive="router-link-active">Hướng dẫn đăng ký KHTT</a></li>
+              <li class="list-group-item"><a [routerLink]="['/login']" routerLinkActive="router-link-active">Điểm tích
+                  lũy</a></li>
+              <li class="list-group-item"><a [routerLink]="['/recruitment']" routerLinkActive="router-link-active">Tuyển
+                  dụng</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <h4 style="font-weight: bold; color: crimson; font-size: 200%; margin-bottom: 5%;">Thông tin khuyến mãi</h4>
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="./assets/home/image/duong-gom-su-ha-noi.jpg" alt="duong-gom-su">
+              </div>
+              <div class="col-sm-9">
+                <h4><a class="a1" href="#">Đường tranh gốm sứ kỷ lục thế giới ở Hà Nội có thể được nối dài</a></h4>
+                <p>Con đường gốm sứ ở Hà Nội sau gần 10 năm nhận kỷ lục Guinness có thể được nối dài về phía cầu Nhật Tân, kết nối liền mạch qua bức tường bê tông An Dương - Nghi Tàm mới hạ cốt.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="./assets/home/image/tranh-gom-chan-dung-lanh-dao-apec.jpg" alt="tranh-gom-chan-dung-lanh-dao-apec">
+              </div>
+              <div class="col-sm-9">
+                <h4><a href="" class="a1">Thủ tướng tặng tranh gốm ghép chân dung cho lãnh đạo 21 nền kinh tế APEC</a></h4>
+                <p> Bộ tranh được chế tác dựa trên ảnh chân dung của các nhà lãnh đạo, với biểu cảm tự nhiên đặc trưng của từng nhân vật, bằng những mảnh gốm sứ nhiều màu. Đó là quà tặng của Thủ tướng Nguyễn Xuân Phúc gửi tới lãnh đạo các nền kinh tế APEC.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="./assets/home/image/do-gom-co.jpg" alt="do-gom-co">
+              </div>
+              <div class="col-sm-9">
+                <h4><a href="" class="a1" >Chiêm ngưỡng bộ sưu tập đồ cổ có niên đại hàng trăm năm tại Hà Tĩnh</a></h4>
+                <p>Sau gần 10 năm sưu tập, hiện anh Nguyễn Tuấn trú tại phường Thạch Linh, TP.Hà Tĩnh đã sở hữu rất nhiều món đồ cổ có giá trị.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="./assets/home/image/gom-xuat-khau.jpg" alt="gom-xuat-khau">
+              </div>
+              <div class="col-sm-9">
+                <h4><a href="" class="a1">Tiêu chuẩn gốm sứ Việt Nam xuất khẩu châu Âu</a></h4>
+                <p>Vào các tháng cuối năm 2019, thị trường gốm sứ tại Việt Nam đang trở lại sôi động hơn bao giờ hết.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+              <hr/>
+              <h4 style="color: blue; font-size: 120%; font-weight: bold;">Các tin liên quan:</h4>
+              <p><a href="">- Quà tết 2019 dành cho thành viên và VIP</a></p>
+              <p><a href="">- Các bước thực hiện khi quên mật khẩu và tài khoản trên website</a></p>
+              <p><a href="">- Lợi ích chương trình chiết khấu thương mại</a></p>
+              <p><a href="">- Nhận triết khẩu thương mại từ điểm tích lũy</a></p>
+              <p><a href="">- Giá ưu đãi giành cho khách hàng tham gia chương trình khách hàng thân thiết </a></p>
+              <p><a href="">- Các bước cơ bản để sở hữu tài khoản trên website</a></p>
+              </div>
+            </div>
+  
+            <div class="col-12">
+              <nav aria-label="...">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <br />
+  <br />
